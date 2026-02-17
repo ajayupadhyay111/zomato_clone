@@ -7,7 +7,7 @@ export interface IUser extends Document {
     role: string;
 }
 
-const schema:Schema<IUser> = new Schema({
+const schema = new Schema<IUser>({
     name: { type: String, required: true },
     email: { type: String, required: true, unique: true },
     image: { type: String, required: false },
